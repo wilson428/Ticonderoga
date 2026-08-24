@@ -1,0 +1,53 @@
+/*************************************************************
+  BELIEVE IN ME — COMMENT / PAGE MARKER STYLING
+  Applies ONLY in Live Preview + Reading Mode.
+  Source Mode remains completely plain.
+**************************************************************/
+
+/* ---------- SCOPING: Live Preview + Reading View only ---------- */
+
+:is(.markdown-preview-view, .is-live-preview) .cm-comment,
+:is(.markdown-preview-view, .is-live-preview) .cm-comment * {
+    /* Hide the raw comment text */
+    color: transparent !important;
+    opacity: 0 !important;
+}
+
+/* ---------- Inline ω anchor inside the text flow ---------- */
+
+:is(.markdown-preview-view, .is-live-preview) .cm-comment::after {
+    content: "ω";
+    opacity: 0.6;
+    font-size: 0.7em;
+    vertical-align: super;
+    padding-left: 0.15em;
+    padding-right: 0.15em;
+    position: static;     /* behaves like normal inline text */
+    color: var(--text-muted);
+}
+
+/* ---------- The marginal bubble (floating box) ---------- */
+
+:is(.markdown-preview-view, .is-live-preview) .cm-comment.cm-line::before {
+    content: attr(cm-text);                  /* show actual comment text */
+    position: absolute;
+    left: -26%;
+    width: 22%;
+    max-width: 260px;
+
+    background: var(--background-secondary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 0.75em;
+    line-height: 1.3;
+    color: var(--text-muted);
+    opacity: 0.9;
+
+    white-space: pre-wrap;
+}
+
+/* ---------- Extra spacing before new chapters ---------- */
+:is(.markdown-preview-view, .is-live-preview) .cm-header.cm-header-1 {
+    margin-top: 4rem;
+}

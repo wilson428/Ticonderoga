@@ -1,0 +1,37 @@
+# ===========================
+# Believe in Me - Git ignore
+# ===========================
+
+# --- Build artifacts (transient) ---
+build/
+*.tmp
+*.log
+*.bak
+*.swp
+.DS_Store
+
+# --- OCR outputs ---
+# Keep the folder but ignore contents
+/data/ocr/*
+!/data/ocr/.gitkeep
+/scripts/*.ipynb
+
+# --- System and editor files ---
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+.env
+venv/
+.envrc
+
+# --- OS junk ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+preview
+
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/plugins/

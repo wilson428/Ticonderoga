@@ -1,0 +1,55 @@
+{
+  "parts": {
+    "I": {
+      "title": "The Suit",
+      "chapter_count": 28,
+      "chapter_start": 1
+    },
+    "II": {
+      "title": "Ticonderoga",
+      "chapter_count": 15,
+      "chapter_start": 29
+    },
+    "III": {
+      "title": "Hector",
+      "chapter_count": 29,
+      "chapter_start": 44
+    },
+    "IV": {
+      "title": "The Bidding War",
+      "chapter_count": 36,
+      "chapter_start": 73
+    },
+    "V": {
+      "title": "BRIDE OF HECTOR",
+      "chapter_count": 1,
+      "chapter_start": 109
+    },
+    "VI": {
+      "title": "BRIDE OF HECTOR",
+      "chapter_count": 0,
+      "chapter_start": 110
+    },
+    "VII": {
+      "title": "SASQUATCH'S DILEMMA",
+      "chapter_count": 0,
+      "chapter_start": 110
+    },
+    "VIII": {
+      "title": "The Sasquatch's Dilemma",
+      "chapter_count": 0,
+      "chapter_start": 110
+    },
+    "IX": {
+      "title": "HECTOR!S REVENGE",
+      "chapter_count": 0,
+      "chapter_start": 110
+    },
+    "X": {
+      "title": "MY ISLAND",
+      "chapter_count": 0,
+      "chapter_start": 110
+    }
+  },
+  "total_chapters": 109
+}

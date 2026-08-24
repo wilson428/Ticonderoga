@@ -1,0 +1,146 @@
+/* ============================================================
+   NOVEL MODE — Enabled ONLY in Live Preview + Reading Mode
+   Source Mode is completely untouched (plain Markdown)
+   ============================================================ */
+
+
+/* ============================================================
+   LIVE PREVIEW (editing) — apply novel-style typography
+   ============================================================ */
+
+.markdown-source-view.mod-cm6.is-live-preview .cm-scroller,
+.markdown-source-view.mod-cm6.is-live-preview .cm-contentContainer {
+  font-family: "Iowan Old Style", "Charter", "Georgia", serif !important;
+  font-size: 1.07rem !important;
+  line-height: 1.55 !important;
+
+  /* Page layout */
+  max-width: 75ch !important;
+  margin: 0 auto !important;
+  padding: 2.5rem 2rem 2.5rem 4rem !important; /* extra left margin for marginalia */
+}
+
+/* Paragraph indentation (Live Preview only) */
+.markdown-source-view.mod-cm6.is-live-preview .cm-line {
+  text-indent: 1.5em;
+}
+
+/* Do not indent after headings */
+.markdown-source-view.mod-cm6.is-live-preview h1 + .cm-line,
+.markdown-source-view.mod-cm6.is-live-preview h2 + .cm-line,
+.markdown-source-view.mod-cm6.is-live-preview h3 + .cm-line {
+  text-indent: 0 !important;
+}
+
+/* Headings (Live Preview) */
+.markdown-source-view.mod-cm6.is-live-preview h1,
+.markdown-source-view.mod-cm6.is-live-preview h2,
+.markdown-source-view.mod-cm6.is-live-preview h3 {
+  font-weight: 600 !important;
+  text-align: center !important;
+  margin-top: 2.2em !important;
+  margin-bottom: 1em !important;
+}
+
+
+/* ============================================================
+   MARGINALIA — Only in Live Preview + Reading Mode
+   ============================================================ */
+
+/* Live Preview left-margin notes */
+.markdown-source-view.mod-cm6.is-live-preview .cm-line .cm-comment {
+  float: left !important;
+  clear: left !important;
+  width: 14ch;
+  margin-left: -18ch;      /* push into left margin */
+  margin-right: 1em;
+  padding: 0.25em 0.5em;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  background-color: var(--background-secondary);
+  color: var(--text-muted);
+  border-right: 2px solid var(--text-muted);
+  border-radius: 4px;
+  opacity: 0.9;
+  pointer-events: auto;
+}
+
+/* Hide literal <!-- --> markers */
+.markdown-source-view.mod-cm6.is-live-preview .cm-line .cm-comment::before,
+.markdown-source-view.mod-cm6.is-live-preview .cm-line .cm-comment::after {
+/*  display: none !important;*/
+}
+
+/* ============================================================
+   READING MODE — realistic novel page layout
+   ============================================================ */
+
+.markdown-reading-view {
+  font-family: "Iowan Old Style", "Charter", "Georgia", serif !important;
+  font-size: 1.07rem !important;
+  line-height: 1.55 !important;
+
+  max-width: 65ch !important;
+  margin: 0 auto !important;
+  padding: 3rem 2rem 3rem 4rem !important;
+}
+
+/* Reading Mode paragraphs */
+.markdown-reading-view p {
+  text-indent: 1.5em;
+  margin: 0.5em 0;
+}
+
+/* No indent after headings in reading mode */
+.markdown-reading-view h1 + p,
+.markdown-reading-view h2 + p,
+.markdown-reading-view h3 + p {
+  text-indent: 0 !important;
+}
+
+/* Reading Mode headings */
+.markdown-reading-view h1,
+.markdown-reading-view h2,
+.markdown-reading-view h3 {
+  font-weight: 600 !important;
+  text-align: center !important;
+  margin-top: 2.2em;
+  margin-bottom: 1em;
+}
+
+/* Reading Mode marginalia */
+.markdown-reading-view .cm-comment {
+  float: left !important;
+  clear: left !important;
+  width: 14ch;
+  margin-left: -18ch !important;
+  margin-right: 1em !important;
+  padding: 0.25em 0.5em;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  background-color: var(--background-secondary);
+  color: var(--text-muted);
+  border-right: 2px solid var(--text-muted);
+  border-radius: 4px;
+  opacity: 0.9;
+}
+
+
+
+/* ============================================================
+   SOURCE MODE — EXPLICITLY NO NOVEL STYLING
+   ============================================================ */
+
+.markdown-source-view.mod-cm6.is-source-mode .cm-scroller,
+.markdown-source-view.mod-cm6.is-source-mode .cm-contentContainer,
+.markdown-source-view.mod-cm6.is-source-mode .cm-line,
+.markdown-source-view.mod-cm6.is-source-mode .cm-comment {
+  all: unset !important;      /* Remove ALL styles safely */
+  font-family: var(--font-monospace) !important;
+  font-size: 0.95rem !important;
+  line-height: 1.4 !important;
+  white-space: pre !important;
+}
+
+
+

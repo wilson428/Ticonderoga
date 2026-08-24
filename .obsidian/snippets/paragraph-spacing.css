@@ -1,0 +1,15 @@
+/* More space after paragraphs than after soft returns */
+
+/* Reading / Preview mode */
+.markdown-preview-view p,
+.markdown-rendered p {
+  margin-block-start: 0.2em;   /* small space above */
+  margin-block-end: 1.2em;     /* larger space below = paragraph gap */
+}
+
+/* Optional: slightly tighter lists so they don't look too airy */
+.markdown-preview-view li p,
+.markdown-rendered li p {
+  margin-block-start: 0.1em;
+  margin-block-end: 0.4em;
+}
