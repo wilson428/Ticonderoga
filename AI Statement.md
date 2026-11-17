@@ -1,0 +1,1 @@
+The original manuscript for *Believe in Me* was composed on a Webster XL-500 typewriter, a machine untroubled by artificial intelligence. The author made light use of AI for typo identification and the research of a handful of facts about Ticonderoga, N.Y. and New York State criminal law. LLMs played no part in the generation or suggestion of a single word.

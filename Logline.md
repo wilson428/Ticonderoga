@@ -1,0 +1,2 @@
+
+After a man is mistaken for a Sasquatch in Ticonderoga, N.Y., attracting a brief influx of cryptid enthusiasts, he keeps the ruse going as a one-man stimulus program for the Recession-ravaged town. As his appearances accumulate, skeptics race to uncover the hoax while  authorities investigate whether the imposter himself is behind a shady non-profit raising huge amounts of cash. 
